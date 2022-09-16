@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Aluno a1 = new Aluno("Gabriel",19,"gabs@gmail.com");
+            Aluno a2 = new Aluno("Enzo",35,"enzo@gmail.com");
+            Aluno a3 = new Aluno("Murai",12,"murai@gmail.com");
+
+            //a1.setNome("Gabriel");
+            //a2.setNome("Enzo");
+            //a3.setNome("Murai");
+
+            //a1.setIdade(19);
+            //a2.setIdade(35);
+            //a3.setIdade(12);
+
+            //a1.setEmail("gabs@gmail.com");
+            //a2.setEmail("enzo@gmail.com");
+            //a3.setEmail("murai@gmail.com");
+
+            Console.WriteLine(a1.getNome() + " " + a1.getIdade() + " " + a1.getEmail());
+            Console.WriteLine(a2.getNome() + " " + a2.getIdade() + " " + a2.getEmail());
+            Console.WriteLine(a3.getNome() + " " + a3.getIdade() + " " + a3.getEmail());
+
+            Console.ReadKey();
+        }
+    }
+}
