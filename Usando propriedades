@@ -1,0 +1,83 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercicio
+{
+    internal class Funcionario
+    {
+        private string nome;
+        private int matricula;
+        private int salario;
+    
+        public Funcionario()
+        {
+
+        }
+
+        public Funcionario(string nome, int matricula, int salario)
+        {
+            this.nome = nome;
+            this.matricula = matricula;
+            this.salario = salario;
+        }
+
+        public string getNome()
+        {
+            return this.nome;
+        }
+        public void setNome(string nome)
+        {
+            this.nome = nome;
+        }
+
+        public int getMatricula()
+        {
+            return this.matricula;
+        }
+
+        public void setMatricula(int matricula)
+        {
+            this.matricula = matricula;
+        }
+
+        public int getSalario()
+        {
+            return this.salario;
+        }
+
+        public void setsalario(int salario)
+        {
+            this.salario = salario;
+        }
+
+        public void imprimir()
+        {
+            Console.WriteLine(this.nome + " " + this.matricula + " " + this.salario);
+        }
+
+    }
+}
+
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Funcionario[] nome = { new Funcionario("Mario"), new Funcionario("Marcos"), new Funcionario("Lucas"), new Funcionario("Constantino"), nem Funcionario("Roberta") };
+            Funcionario[] matricula = { new Funcionario(234), new Funcionario(432), new Funcionario(673), new Funcionario(876) };
+            Funcionario[] salario = { new Funcionario(2000), new Funcionario(2100), new Funcionario(3000), new Funcionario(4000) };
+        
+            foreach (Funcionario funcionario in nome)
+            {
+                Console.WriteLine(funcionario.nome);
+                Console.WriteLine(funcionario.matricula);
+                Console.WriteLine(funcionario.nome);
+            }
+            Console.ReadKey();
+
+        }
+    }
+}
